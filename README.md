@@ -1,190 +1,136 @@
-💊 MediClick — Plataforma Web de Farmacia con Modelos 3D (Tomcat 11 + JSP)
+<h1 align="center">💊 MediClick — Plataforma Web de Farmacia (Tomcat 11 + JSP)</h1>
 
-MediClick es una aplicación web moderna desarrollada en Java (JSP/Servlets) y desplegada en Apache Tomcat 11.
-Su principal objetivo es ofrecer un sistema de gestión farmacéutica con una interfaz atractiva e interactiva, incorporando modelos 3D GLB para mejorar la experiencia del usuario al visualizar productos.
+<p align="center">
+  <strong>Aplicación web de farmacia desarrollada en Java con JSP, Servlets, Tomcat 11 y PostgreSQL</strong><br>
+  Incluye modelos 3D (.glb), autenticación por roles y un diseño moderno tipo e-commerce.
+</p>
 
-🚀 Características Principales
+<hr>
 
-🛒 Gestión de productos farmacéuticos
+<h2>🚀 Características principales</h2>
 
-👤 Sistema de usuarios con roles:
+<ul>
+  <li><strong>Gestión de productos farmacéuticos</strong></li>
+  <li>Visualización interactiva de modelos <strong>3D GLB</strong></li>
+  <li>Sistema de usuarios con roles:
+    <ul>
+      <li>Administrador</li>
+      <li>Vendedor</li>
+      <li>Cliente</li>
+    </ul>
+  </li>
+  <li>Carrito de compras dinámico</li>
+  <li>Conexión con base de datos <strong>PostgreSQL</strong></li>
+  <li>Interfaz responsive con <strong>Bootstrap 5</strong></li>
+  <li>Arquitectura <strong>MVC</strong> con Servlets + JSP</li>
+</ul>
 
-Administrador
+<hr>
 
-Vendedor
+<h2>🧠 Objetivo del proyecto</h2>
+<p>
+Crear una plataforma moderna para farmacias, permitiendo gestionar productos, usuarios y ventas,
+integrando además modelos 3D para mejorar la experiencia visual del usuario.
+</p>
 
-Cliente
+<hr>
 
-📦 Carrito de compras dinámico
+<h2>🛠 Tecnologías utilizadas</h2>
 
-🧩 Visualización 3D de productos mediante modelos GLB
+<table>
+  <tr>
+    <th>Tecnología</th>
+    <th>Uso</th>
+  </tr>
+  <tr>
+    <td>Java 17 / 21</td>
+    <td>Lógica de negocio</td>
+  </tr>
+  <tr>
+    <td>JSP / JSTL</td>
+    <td>Generación dinámica de páginas</td>
+  </tr>
+  <tr>
+    <td>Servlets</td>
+    <td>Controladores MVC</td>
+  </tr>
+  <tr>
+    <td>Tomcat 11</td>
+    <td>Servidor Web</td>
+  </tr>
+  <tr>
+    <td>PostgreSQL</td>
+    <td>Base de datos</td>
+  </tr>
+  <tr>
+    <td>Bootstrap 5</td>
+    <td>Diseño e interfaz</td>
+  </tr>
+  <tr>
+    <td>GLB / GLTF</td>
+    <td>Modelos 3D</td>
+  </tr>
+</table>
 
-📄 Módulo de facturación y control de stock
+<hr>
 
-🗄️ Conexión con base de datos PostgreSQL
+<h2>📁 Estructura del proyecto</h2>
 
-🔐 Login y registro con validación
-
-🎨 Diseño responsive con Bootstrap 5
-
-🧭 Menús dinámicos basados en el tipo de usuario
-
-⚙️ Arquitectura MVC con Servlets y JSP
-
-🌐 Compatible con Tomcat 9, 10 y 11
-
-🧠 Objetivo del Proyecto
-
-Crear una plataforma moderna e intuitiva para farmacias que permita gestionar productos, ventas y usuarios, incorporando además elementos visuales 3D para ofrecer una experiencia interactiva única.
-
-🛠️ Tecnologías Utilizadas
-Backend
-
-Java 17 / Java 21
-
-Servlets (Jakarta EE)
-
-JSP
-
-JDBC
-
-Apache Tomcat 11
-
-Frontend
-
-HTML5
-
-CSS3
-
-Bootstrap 5.3
-
-JavaScript
-
-GLTF / GLB Viewer (modelos 3D)
-
-Base de Datos
-
-PostgreSQL
-
-SQL Scripts personalizados
-
-Triggers y bitácora de auditoría
-
-Herramientas
-
-IntelliJ IDEA / Eclipse
-
-GitHub / GitHub Desktop
-
-PgAdmin
-
-Canva (para imágenes del proyecto)
-
-📁 Estructura del Proyecto
+<pre>
 MediClick_Tomcat11/
 │
 ├── src/
 │   ├── main/
-│   │   ├── java/         # Controladores, DAOs, lógica
-│   │   ├── webapp/       # JSP, CSS, JS, modelos 3D
-│   │   │   ├── img/
+│   │   ├── java/        ← Servlets, modelos, DAO
+│   │   ├── webapp/      ← JSP, CSS, JS, imágenes
 │   │   │   ├── css/
 │   │   │   ├── js/
-│   │   │   ├── modelos3d/  # Archivos GLB
-│   │   │   └── paginas JSP
+│   │   │   ├── img/
+│   │   │   ├── modelos3d/
+│   │   │   └── *.jsp
 │   └── resources/
 │
-├── pom.xml (si usas Maven)
-└── README.md
+├── WEB-INF/
+│   ├── web.xml
+│
+├── glb_models/
+├── README.md
+</pre>
 
-⚙️ Instalación y Ejecución
-1. Clonar el repositorio
-git clone https://github.com/tuusuario/MediClick_Tomcat11.git
+<hr>
 
-2. Importar el proyecto
+<h2>⚙️ Instalación y ejecución</h2>
 
-Abrir IntelliJ, Eclipse o NetBeans
+<h3>1️⃣ Clonar el repositorio</h3>
+<pre>git clone https://github.com/tuusuario/MediClick_Tomcat11.git</pre>
 
-Importar como Proyecto Java Web / Maven
+<h3>2️⃣ Importar en tu IDE</h3>
+<p>Funciona en IntelliJ, Eclipse o VS Code (con extensiones de Java).</p>
 
-3. Configurar Tomcat
+<h3>3️⃣ Configurar Tomcat 11</h3>
+<p>Añadir Tomcat 11 como servidor y desplegar el proyecto.</p>
 
-Agregar un servidor Tomcat 11
+<h3>4️⃣ Configurar base de datos PostgreSQL</h3>
+<p>Importar tablas, triggers y datos iniciales.</p>
 
-Definir ruta del proyecto como Deployment Artifact
+<h3>5️⃣ Ejecutar la web</h3>
+<pre>http://localhost:8080/FARM/</pre>
 
-4. Crear la base de datos en PostgreSQL
+<hr>
 
-Ejecutar tus scripts:
+<h2>🖼 Capturas del proyecto</h2>
+<p>(Agrega aquí imágenes si deseas)</p>
 
-CREATE DATABASE mediclick;
+<hr>
 
+<h2>👤 Autores</h2>
+<ul>
+  <li><strong>Emily Mabel Ortega Constante</strong></li>
+  <li>Equipo MediClick</li>
+</ul>
 
-Importar tablas y triggers:
+<hr>
 
-\i rutas/tablas.sql
-\i rutas/triggers_bitacora.sql
+<h2>📜 Licencia</h2>
+<p>Este proyecto es de uso académico y demostrativo.</p>
 
-5. Ejecutar la aplicación
-
-Abrir en el navegador:
-
-http://localhost:8080/MediClick/
-
-🖼️ Capturas del Proyecto
-
-(Agrega aquí las capturas cuando quieras, yo puedo ayudarte a editarlas)
-
-Ejemplo:
-
-🔐 Login
-
-🛒 Carrito
-
-🧬 Modelos 3D
-
-📌 Funcionalidades destacadas
-
-Buscador inteligente de productos
-
-Ingreso y edición de productos con imágenes y modelos 3D
-
-Registro de ventas por usuario
-
-Auditoría en base de datos (bitácora)
-
-Panel administrativo con estadísticas básicas
-
-🧪 Estado del Proyecto
-
-✔️ En desarrollo activo
-✔️ Funcionalidades principales completadas
-⬜ Módulo de reportes
-⬜ Integración con correo electrónico
-
-📚 Autores
-
-Proyecto desarrollado por:
-
-Emily Mabel Ortega Constante
-
-Otros integrantes del equipo (si deseas agregarlos)
-
-📄 Licencia
-
-Este proyecto es de uso académico.
-Puedes copiar, estudiar y modificar el código según tus necesidades.
-
-🌟 Contribuciones
-
-¡Se aceptan mejoras!
-Si deseas colaborar:
-
-Haz un fork
-
-Crea un branch:
-git checkout -b feature-nueva-funcion
-
-Sube tus cambios
-
-Crea un Pull Request
