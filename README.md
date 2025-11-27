@@ -120,11 +120,11 @@ MediClick_Tomcat11/
 
 <h2>🖼 Capturas del proyecto</h2>
 <p align="center">
-  <img src="img/readme/home.png" width="700">
+  <img src="img/home.png" width="700">
 </p>
 
 <p align="center">
-  <img src="img/readme/productos.png" width="700">
+  <img src="img/productos.png" width="700">
 </p>
 
 <hr>
