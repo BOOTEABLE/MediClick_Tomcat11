@@ -119,14 +119,19 @@ MediClick_Tomcat11/
 <hr>
 
 <h2>🖼 Capturas del proyecto</h2>
-<p>(Agrega aquí imágenes si deseas)</p>
+<p align="center">
+  <img src="img/readme/home.png" width="700">
+</p>
+
+<p align="center">
+  <img src="img/readme/productos.png" width="700">
+</p>
 
 <hr>
 
 <h2>👤 Autores</h2>
 <ul>
-  <li><strong>Emily Mabel Ortega Constante</strong></li>
-  <li>Equipo MediClick</li>
+  <li><strong>Emily Mabel Ortega Constante</strong></li>  
 </ul>
 
 <hr>
